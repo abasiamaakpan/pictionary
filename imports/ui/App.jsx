@@ -1,13 +1,16 @@
-import React from 'react';
-import Hello from './Hello.jsx';
-import Info from './Info.jsx';
+import React, { Component } from "react";
 
-const App = () => (
-  <div>
-    <h1>Welcome to Meteor!</h1>
-    <Hello />
-    <Info />
-  </div>
-);
+import AccountsUIWrapper from "./AccountsUIWrapper.js";
 
-export default App;
+export default class App extends Component{
+	render() {
+		return(
+			<div>
+				
+				<div>Collaborative Painting </div>
+				<AccountsUIWrapper/>
+				<div> Made by AB </div>
+			</div>
+			);
+	}
+}
